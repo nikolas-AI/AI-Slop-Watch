@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real-World Examples — AI Slop Watch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">⚠ AI Slop Watch</span>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="what-is-ai-content.html">What Is It?</a></li>
+    <li><a href="growth.html">Growth & Stats</a></li>
+    <li><a href="consequences.html">Consequences</a></li>
+    <li><a href="examples.html" class="active">Real Examples</a></li>
+    <li><a href="solutions.html">Solutions</a></li>
+  </ul>
+  <span class="nav-hamburger" onclick="toggleNav()">☰</span>
+</nav>
+
+<div class="page-header">
+  <div class="section" style="padding-top:0; padding-bottom:0;">
+    <p class="section-label">Page 04 — Case Studies</p>
+    <h1>Real-World Examples</h1>
+    <p>These aren't hypotheticals. AI-generated content has already shaped elections, damaged reputations, and fooled millions of people. Here are documented cases that show the stakes are real.</p>
+  </div>
+</div>
+
+<div class="section" style="max-width:860px; margin: 3rem auto;">
+
+  <h2 class="section-title">The problem is already here, not coming soon</h2>
+  <p>It's tempting to think of AI misinformation as a future threat, something to worry about later. But the cases below happened in the last two to three years. They involved real people, real consequences, and real failures to detect synthetic content before it caused damage.</p>
+  <p>These examples are chosen to show the breadth of the problem: it spans politics, journalism, financial markets, and personal safety.</p>
+
+  <!-- Case Studies -->
+  <div style="margin-top: 2.5rem;">
+
+    <!-- Case 1 -->
+    <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--red-alert);">
+      <p class="section-label" style="color: var(--red-alert);">Case Study 01 — Politics</p>
+      <h3>AI Robocall Suppression Before a Primary Election</h3>
+      <p><strong>What happened:</strong> In early 2024, ahead of the New Hampshire presidential primary, thousands of voters received robocalls featuring what sounded exactly like President Biden's voice telling them <em>not</em> to vote in the primary. The voice was a deepfake, cloned using AI audio tools and deployed to suppress Democratic voter turnout.</p>
+      <p><strong>Why it matters:</strong> The robocall reached real voters. Investigations confirmed the voice was entirely synthetic. The operation was designed to exploit one of the most basic functions of democracy, the vote, using technology that cost almost nothing and required no special skill.</p>
+      <p><strong>What it shows:</strong> AI-generated audio is now a viable, low-cost election interference tool. Any bad actor with internet access can deploy it at scale.</p>
+      <span class="badge badge-red">Confirmed AI Content</span>
+      <span class="badge badge-red">Election Impact</span>
+    </div>
+
+    <!-- Case 2 -->
+    <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--amber);">
+      <p class="section-label">Case Study 02 — Financial Markets</p>
+      <h3>The Fake Pentagon Explosion Image That Moved Stock Markets</h3>
+      <p><strong>What happened:</strong> In May 2023, an AI-generated image of the Pentagon apparently on fire went viral on Twitter/X. Within minutes, news aggregators picked it up, verified news accounts shared it, and the stock market briefly dipped, with S&amp;P 500 futures dropping measurably in response to the fabricated image.</p>
+      <p><strong>Why it matters:</strong> The image was fake, the Pentagon was fine. But the financial impact was real. Automated trading systems react to news events, and a convincing fake image circulated for long enough to trigger real economic consequences before it was debunked.</p>
+      <p><strong>What it shows:</strong> AI misinformation doesn't need to fool everyone for a long time. Fooling a critical mass of people for just a few minutes can be enough to cause measurable real-world damage.</p>
+      <span class="badge badge-amber">Confirmed AI Image</span>
+      <span class="badge badge-amber">Economic Impact</span>
+    </div>
+
+    <!-- Case 3 -->
+    <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--red-alert);">
+      <p class="section-label" style="color: var(--red-alert);">Case Study 03 — Journalism</p>
+      <h3>Sports Illustrated's AI "Authors" With Fake Biographies</h3>
+      <p><strong>What happened:</strong> In late 2023, Sports Illustrated was found to have published articles attributed to authors with AI-generated headshots, fake biographies, and names that appeared nowhere else on the internet. When investigators searched the author photos in reverse image lookup tools, they found the faces matched AI-generated profile photos sold on commercial websites.</p>
+      <p><strong>Why it matters:</strong> This was a major, established media brand, not an obscure clickbait farm. It demonstrated that AI-generated fake "journalists" could slip into mainstream publishing, complete with convincing-looking credentials.</p>
+      <p><strong>What it shows:</strong> The problem of synthetic content isn't limited to trolls and foreign interference campaigns. It's also affecting professional media outlets under financial pressure to cut costs.</p>
+      <span class="badge badge-red">Confirmed AI Personas</span>
+      <span class="badge badge-red">Mainstream Media</span>
+    </div>
+
+    <!-- Case 4 -->
+    <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--amber);">
+      <p class="section-label">Case Study 04 — Personal Harm</p>
+      <h3>Voice-Cloning Family Scams</h3>
+      <p><strong>What happened:</strong> A documented and growing pattern of scam calls uses AI to clone the voice of a family member in distress, typically a grandchild or child calling their elderly relative to say they've been arrested, injured, or are in immediate danger, and desperately need money wired right away. The callers sound exactly like the real person.</p>
+      <p><strong>Why it matters:</strong> The FTC received thousands of reports of these scams in 2023 and 2024. Victims lost significant sums of money. Many victims were older adults who had no reason to be suspicious of a voice they recognized and loved.</p>
+      <p><strong>What it shows:</strong> AI content harm isn't limited to public figures or political contexts. Ordinary families are being targeted using nothing more than a few seconds of audio scraped from social media to clone someone's voice.</p>
+      <span class="badge badge-amber">Confirmed AI Audio</span>
+      <span class="badge badge-amber">Personal Harm</span>
+    </div>
+
+    <!-- Case 5 -->
+    <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--red-alert);">
+      <p class="section-label" style="color: var(--red-alert);">Case Study 05 — Health Information</p>
+      <h3>Fake AI-Generated Medical Studies Go Viral</h3>
+      <p><strong>What happened:</strong> Researchers have identified a growing number of AI-generated "scientific papers" being submitted to, and in some cases accepted by, academic journals. These papers include realistic-looking citations, plausible data, and confident medical claims. Some made their way onto social media where they were cited as authoritative sources for health decisions.</p>
+      <p><strong>Why it matters:</strong> Medical misinformation is especially dangerous because people act on it, refusing treatments that work, adopting treatments that don't, or making life decisions based on fabricated evidence.</p>
+      <p><strong>What it shows:</strong> AI content is now sophisticated enough to penetrate even scientific peer review, long considered one of the most reliable filters for separating good information from bad.</p>
+      <span class="badge badge-red">Confirmed AI Research</span>
+      <span class="badge badge-red">Health Risk</span>
+    </div>
+
+  </div>
+
+  <div class="pull-quote">
+    "Once a fake video is uploaded and shared, corrections rarely reach the same audience. The damage is done before the truth catches up."
+  </div>
+
+  <h2 class="section-title">A pattern emerges</h2>
+  <p>Looking across these cases, a few common threads stand out:</p>
+  <ul class="numbered-list">
+    <li><strong>Speed beats accuracy.</strong> Fake content spreads far faster than fact-checks. By the time the correction arrives, the false version has reached millions.</li>
+    <li><strong>Credibility is faked, not earned.</strong> AI content mimics the visual signals we associate with credibility, professional photos, formal language, citations, bylines.</li>
+    <li><strong>The cost is essentially zero.</strong> Creating a convincing fake requires no money, no skill, and no time investment. This changes the math of who can run a misinformation campaign.</li>
+    <li><strong>Ordinary people are targeted.</strong> These harms don't only affect politicians or celebrities. They reach everyday families, voters, patients, and news readers.</li>
+  </ul>
+
+  <div style="margin-top: 3rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+    <a href="solutions.html" class="btn">Next: Solutions →</a>
+    <a href="consequences.html" class="back-link" style="line-height: 2.8;">← Consequences</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>⚠ <strong>AI Slop Watch</strong> — An Informational Website on Synthetic Content &amp; Public Trust</p>
+    <p>Created for the <a href="https://c2pa.org" target="_blank">Coalition for Content Provenance and Authenticity (C2PA)</a></p>
+    <p>Sources: Graphite (2024) · BrowserCat (2025) · Keepnet Labs (2025) · DeepStrike (2025) · Gaudiaut / Statista (2026)</p>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+</script>
+
+</body>
+</html>

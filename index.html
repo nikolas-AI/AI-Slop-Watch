@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Slop Watch — The Internet's Synthetic Content Crisis</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <span class="nav-logo">⚠ AI Slop Watch</span>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="what-is-ai-content.html">What Is It?</a></li>
+    <li><a href="growth.html">Growth & Stats</a></li>
+    <li><a href="consequences.html">Consequences</a></li>
+    <li><a href="examples.html">Real Examples</a></li>
+    <li><a href="solutions.html">Solutions</a></li>
+  </ul>
+  <span class="nav-hamburger" onclick="toggleNav()" id="hamburger">☰</span>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <p class="hero-eyebrow">A Public Awareness Initiative</p>
+  <h1>The Internet Is Filling<br>With <em>Fake Content.</em><br>Faster Than You Think.</h1>
+  <p class="hero-sub">AI tools now produce more articles, images, and videos than all human writers combined. Most of it looks completely real. Here's why that matters, and what we can do about it.</p>
+  <a href="what-is-ai-content.html" class="btn">Start Learning</a>
+  <a href="growth.html" class="btn btn-ghost">See the Data</a>
+</section>
+
+<div style="max-height:400px; overflow:hidden; position:relative;">
+ <img src="Home.png" alt="Human authorship vs AI mass production" 
+     style="width:100%; max-height:300px; object-fit:cover; display:block;">
+  <p style="position:absolute; bottom:1rem; left:1.5rem; font-family:'Space Mono',monospace; font-size:0.68rem; color:#ccc; letter-spacing:0.06em; text-transform:uppercase;">Photo: Markus Winkler / Unsplash</p>
+</div>
+
+<!-- Stat Bar -->
+<div class="stat-bar">
+  <div class="stat-item">
+    <div class="stat-number">39%</div>
+    <div class="stat-label">of all online articles are AI-generated, and that within just 12 months of ChatGPT's launch</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">34M+</div>
+    <div class="stat-label">synthetic images created every single day by AI tools worldwide</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">0.1%</div>
+    <div class="stat-label">of people can correctly identify all fake and real media when tested</div>
+  </div>
+</div>
+
+<!-- Intro Section -->
+<div class="section" style="max-width:860px; margin: 4rem auto; padding-bottom: 0;">
+  <p class="section-label">The Problem</p>
+  <h2 class="section-title">You probably read something fake today, and didn't know it.</h2>
+  <p>Generative AI, the technology behind ChatGPT, image generators, and voice cloners, has made it shockingly easy to produce realistic-looking text, photos, and videos. As a result, AI-made content is flooding the internet at a pace no one can keep up with.</p>
+  <p>This isn't just about spam or annoying clickbait. When fake content becomes indistinguishable from real, it erodes something fundamental: our ability to trust what we see and read online. And once that trust is gone, it's very hard to get back.</p>
+  <div class="callout alert-callout">
+    <strong>Why This Matters</strong>
+    "If we leave this problem untreated, the increase in unverified AI-generated content will lead to erosion of public trust on the internet." — Tristan Gaudiaut, Data Journalist (2026)
+  </div>
+</div>
+
+<!-- Preview Chart -->
+<div class="section" style="max-width: 860px; margin: 2rem auto;">
+  <p class="section-label">A Snapshot</p>
+  <h2 class="section-title">The Rise of AI Content: 2022–2026</h2>
+  <div class="chart-wrapper">
+    <canvas id="heroChart"></canvas>
+    <p class="chart-caption">FIGURE 1: Estimated share of AI-generated content as a percentage of all internet articles published each year. Sources: Graphite (2024); BrowserCat (2025); Gaudiaut (2026).</p>
+  </div>
+  <p>The graph above tells a striking story. In early 2022, almost no articles online were made by AI. By late 2023, AI was producing nearly 4 out of every 10 articles published. Researchers now predict AI content could make up <strong>90% of all online content by the end of 2026.</strong></p>
+  <a href="growth.html" class="back-link">→ See Full Statistics</a>
+</div>
+
+<!-- Nav Cards Section -->
+<div class="section-alt">
+  <div class="section">
+    <p class="section-label">Explore The Site</p>
+    <h2 class="section-title">What do you want to understand?</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-num">01</div>
+        <h3>What Is AI-Generated Content?</h3>
+        <p>Learn what "synthetic content" actually means, how it's made, and why it's so hard to spot.</p>
+        <a href="what-is-ai-content.html" class="btn" style="font-size:0.7rem; padding: 0.6rem 1.2rem;">Read More →</a>
+      </div>
+      <div class="card">
+        <div class="card-num">02</div>
+        <h3>How Fast Is It Growing?</h3>
+        <p>Charts and plain-English data showing just how much AI content exists, and how quickly it multiplied.</p>
+        <a href="growth.html" class="btn" style="font-size:0.7rem; padding: 0.6rem 1.2rem;">See the Numbers →</a>
+      </div>
+      <div class="card">
+        <div class="card-num">03</div>
+        <h3>What Are the Consequences?</h3>
+        <p>From political misinformation to everyday confusion, here's the real harm being done to society.</p>
+        <a href="consequences.html" class="btn" style="font-size:0.7rem; padding: 0.6rem 1.2rem;">Learn the Risks →</a>
+      </div>
+      <div class="card">
+        <div class="card-num">04</div>
+        <h3>Real-World Examples</h3>
+        <p>Cases where AI-generated content fooled real people, including journalists and voters.</p>
+        <a href="examples.html" class="btn" style="font-size:0.7rem; padding: 0.6rem 1.2rem;">See Examples →</a>
+      </div>
+      <div class="card">
+        <div class="card-num">05</div>
+        <h3>What Can Be Done?</h3>
+        <p>The tools, initiatives, and habits that can help us fight back, including what C2PA is building.</p>
+        <a href="solutions.html" class="btn" style="font-size:0.7rem; padding: 0.6rem 1.2rem;">Explore Solutions →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <p>⚠ <strong>AI Slop Watch</strong> — An Informational Website on Synthetic Content &amp; Public Trust</p>
+    <p>Created for the <a href="https://c2pa.org" target="_blank">Coalition for Content Provenance and Authenticity (C2PA)</a></p>
+    <p>Sources: Graphite (2024) · BrowserCat (2025) · Keepnet Labs (2025) · DeepStrike (2025) · Gaudiaut / Statista (2026)</p>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+// Hero Chart — AI content growth 2022–2026
+const ctx = document.getElementById('heroChart').getContext('2d');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['Early 2022', 'Late 2022', 'Mid 2023', 'Early 2024', 'Late 2024', 'Mid 2025', 'Late 2026 (est.)'],
+    datasets: [{
+      label: 'AI-Generated Share of All Online Articles (%)',
+      data: [0.5, 2, 18, 39, 55, 70, 90],
+      borderColor: '#e8a020',
+      backgroundColor: 'rgba(232,160,32,0.1)',
+      borderWidth: 3,
+      fill: true,
+      tension: 0.4,
+      pointBackgroundColor: '#e8a020',
+      pointRadius: 6,
+      pointHoverRadius: 9
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => ` ${ctx.raw}% of articles`
+        }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 100,
+        ticks: { callback: v => v + '%', font: { family: 'Space Mono', size: 11 } },
+        grid: { color: '#e0d8cc' }
+      },
+      x: {
+        ticks: { font: { family: 'Space Mono', size: 10 } },
+        grid: { color: '#e0d8cc' }
+      }
+    }
+  }
+});
+</script>
+
+</body>
+</html>

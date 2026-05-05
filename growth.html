@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Growth & Statistics — AI Slop Watch</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">⚠ AI Slop Watch</span>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="what-is-ai-content.html">What Is It?</a></li>
+    <li><a href="growth.html" class="active">Growth & Stats</a></li>
+    <li><a href="consequences.html">Consequences</a></li>
+    <li><a href="examples.html">Real Examples</a></li>
+    <li><a href="solutions.html">Solutions</a></li>
+  </ul>
+  <span class="nav-hamburger" onclick="toggleNav()">☰</span>
+</nav>
+
+<div class="page-header">
+  <div class="section" style="padding-top:0; padding-bottom:0;">
+    <p class="section-label">Page 02 — By The Numbers</p>
+    <h1>Growth &amp; Statistics</h1>
+    <p>The numbers behind the AI content explosion, translated into plain English, so you can see exactly what's happening.</p>
+  </div>
+</div>
+
+<div class="section" style="max-width:900px; margin: 3rem auto;">
+
+  <h2 class="section-title">From a trickle to a flood, in just three years</h2>
+  <p>In January 2022, AI-generated content on the internet was negligible, almost like a statistical rounding error. Then ChatGPT launched in late November 2022. In the twelve months that followed, the percentage of AI-written articles shot from near-zero to nearly <strong>39%</strong> of all published articles.</p>
+  <p>To put that in human terms: imagine a busy newsroom where 10 reporters file stories every day. Then suddenly, 6 of those 10 desks are replaced by machines that never sleep, never ask for a paycheck, and never slow down. That's what happened to the internet's content supply chain.</p>
+
+  <!-- Chart 1: Growth Over Time -->
+  <p class="section-label" style="margin-top: 2.5rem;">Visual 1 — Growth Over Time</p>
+  <div class="chart-wrapper">
+    <canvas id="growthChart"></canvas>
+    <p class="chart-caption">FIGURE 2: Estimated percentage of all published online articles that are AI-generated, by time period (2022–2026). The sharp rise after Nov. 2022 coincides with ChatGPT's public launch. <br> Sources: Graphite (2024); BrowserCat (2025); Gaudiaut/Statista (2026).</p>
+  </div>
+
+  <div class="callout">
+    <strong>Plain English Takeaway</strong>
+    By the end of 2023, roughly 4 out of every 10 articles you might encounter online was written by an AI, not a human. Researchers predict this could reach 9 out of 10 by end of 2026.
+  </div>
+
+  <!-- Chart 2: Content Type Breakdown -->
+  <h2 class="section-title" style="margin-top: 3rem;">It's not just articles, it's everything</h2>
+  <p>The growth of synthetic content goes far beyond text. AI tools are now flooding every type of media on the internet. The volume of deepfake videos jumped from around 500,000 in 2023 to approximately 8 million in 2025, a <strong>16x increase in just two years.</strong></p>
+  <p>Images tell an even more staggering story: researchers estimate that more than <strong>34 million AI-generated images are created every single day</strong>. Since 2022, more than <strong>15 billion synthetic images</strong> have been produced in total.</p>
+
+  <p class="section-label" style="margin-top: 2rem;">Visual 2 — Deepfake Volume Growth</p>
+  <div class="chart-wrapper">
+    <canvas id="deepfakeChart"></canvas>
+    <p class="chart-caption">FIGURE 3: Number of deepfake video files detected online, comparing 2023 to 2025. Data shows a 16-fold increase in just two years. Source: DeepStrike (2025).</p>
+  </div>
+
+  <!-- Stat Cards -->
+  <h2 class="section-title" style="margin-top: 3rem;">Key Numbers at a Glance</h2>
+  <div class="card-grid">
+    <div class="card card-dark">
+      <div class="card-num">39%</div>
+      <p style="color:#c0bab2;">Share of all published online articles that were AI-generated within 12 months of ChatGPT's launch. Previously near zero.</p>
+      <p class="source-tag" style="color:#666;">Source: Graphite, 2024</p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-num">34M</div>
+      <p style="color:#c0bab2;">New AI-generated images produced every day worldwide, enough to fill thousands of photo albums per second.</p>
+      <p class="source-tag" style="color:#666;">Source: BrowserCat, 2025</p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-num">15B+</div>
+      <p style="color:#c0bab2;">Total synthetic images created since 2022. That's roughly two fake images for every person alive on Earth.</p>
+      <p class="source-tag" style="color:#666;">Source: BrowserCat, 2025</p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-num">8M</div>
+      <p style="color:#c0bab2;">Deepfake video files detected online in 2025, up from just 500,000 in 2023. A 16x increase in two years.</p>
+      <p class="source-tag" style="color:#666;">Source: DeepStrike, 2025</p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-num">90%</div>
+      <p style="color:#c0bab2;">Predicted share of all internet content that could be AI-generated by end of 2026 if current trends continue.</p>
+      <p class="source-tag" style="color:#666;">Source: BrowserCat, 2025</p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-num">0.1%</div>
+      <p style="color:#c0bab2;">Percentage of people who could correctly identify all fake and real media in a 2025 study. 999 out of 1,000 were fooled at least once.</p>
+      <p class="source-tag" style="color:#666;">Source: iProov / Keepnet, 2025</p>
+    </div>
+  </div>
+
+  <!-- Human vs AI Comparison -->
+  <h2 class="section-title" style="margin-top: 3rem;">Human Content vs. AI Content: A Side-by-Side Look</h2>
+  <p>Not all AI content is dangerous. But understanding the key differences between human-created and AI-generated content helps us see why the flood of synthetic material is such a problem for trust and authenticity.</p>
+
+  <p class="section-label" style="margin-top: 1.5rem;">Visual 3 — Human vs. AI Content Comparison</p>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th class="col-human">✅ Human-Written Content</th>
+        <th class="col-ai">⚠ AI-Generated Content</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Time to produce</strong></td>
+        <td>Hours to days of research and writing</td>
+        <td>Seconds (no research required)</td>
+      </tr>
+      <tr>
+        <td><strong>Fact-checking</strong></td>
+        <td>Editors verify facts before publishing</td>
+        <td>Often none. AI can confidently state false "facts"</td>
+      </tr>
+      <tr>
+        <td><strong>Accountability</strong></td>
+        <td>Author and publication are identifiable</td>
+        <td>Often anonymous or falsely attributed</td>
+      </tr>
+      <tr>
+        <td><strong>Motivation</strong></td>
+        <td>Inform, persuade, entertain with intent</td>
+        <td>Often optimized for clicks, engagement, or deception</td>
+      </tr>
+      <tr>
+        <td><strong>Volume</strong></td>
+        <td>Limited by human capacity</td>
+        <td>Essentially unlimited (scales to millions per day)</td>
+      </tr>
+      <tr>
+        <td><strong>Accuracy</strong></td>
+        <td>Generally verified or clearly labeled as opinion</td>
+        <td>Frequently contains confident-sounding errors ("hallucinations")</td>
+      </tr>
+      <tr>
+        <td><strong>Detectability</strong></td>
+        <td>Comes with byline, style, credentials</td>
+        <td>Designed to look exactly like real human writing</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="chart-caption">TABLE 1 — A comparison of key characteristics between human-created and AI-generated content, highlighting the specific risks that synthetic content introduces to digital information spaces.</p>
+
+  <div class="callout alert-callout" style="margin-top: 2.5rem;">
+    <strong>The Trust Crisis</strong>
+    78% of Americans say it is harder than ever to distinguish human content from AI-generated content. Only 41% believe what they read online is accurate and human-written. (Source: Elad, 2025)
+  </div>
+
+  <div style="margin-top: 3rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+    <a href="consequences.html" class="btn">Next: Consequences →</a>
+    <a href="what-is-ai-content.html" class="back-link" style="line-height: 2.8;">← What Is It?</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>⚠ <strong>AI Slop Watch</strong> — An Informational Website on Synthetic Content &amp; Public Trust</p>
+    <p>Created for the <a href="https://c2pa.org" target="_blank">Coalition for Content Provenance and Authenticity (C2PA)</a></p>
+    <p>Sources: Graphite (2024) · BrowserCat (2025) · Keepnet Labs (2025) · DeepStrike (2025) · Gaudiaut / Statista (2026)</p>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+// Chart 1: Growth over time
+const ctx1 = document.getElementById('growthChart').getContext('2d');
+new Chart(ctx1, {
+  type: 'line',
+  data: {
+    labels: ['Jan 2022', 'Nov 2022\n(ChatGPT launch)', 'Jun 2023', 'Jan 2024', 'Mid 2024', 'Early 2025', 'Late 2026\n(projected)'],
+    datasets: [{
+      label: '% of Articles That Are AI-Generated',
+      data: [0.5, 2, 18, 39, 55, 70, 90],
+      borderColor: '#e8a020',
+      backgroundColor: 'rgba(232,160,32,0.12)',
+      borderWidth: 3,
+      fill: true,
+      tension: 0.4,
+      pointBackgroundColor: '#e8a020',
+      pointRadius: 7,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: {
+        beginAtZero: true, max: 100,
+        ticks: { callback: v => v + '%', font: { family: 'Space Mono', size: 11 } },
+        grid: { color: '#e0d8cc' }
+      },
+      x: {
+        ticks: { font: { family: 'Space Mono', size: 10 } },
+        grid: { color: '#e0d8cc' }
+      }
+    }
+  }
+});
+
+// Chart 2: Deepfake growth
+const ctx2 = document.getElementById('deepfakeChart').getContext('2d');
+new Chart(ctx2, {
+  type: 'bar',
+  data: {
+    labels: ['2023', '2024 (est.)', '2025'],
+    datasets: [{
+      label: 'Number of Deepfake Files Detected (millions)',
+      data: [0.5, 3.5, 8],
+      backgroundColor: ['#e8a020', '#c0392b', '#8b0000'],
+      borderWidth: 0,
+      borderRadius: 3
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: { callback: v => v + 'M', font: { family: 'Space Mono', size: 11 } },
+        grid: { color: '#e0d8cc' }
+      },
+      x: {
+        ticks: { font: { family: 'Space Mono', size: 12 } },
+        grid: { display: false }
+      }
+    }
+  }
+});
+</script>
+
+</body>
+</html>
